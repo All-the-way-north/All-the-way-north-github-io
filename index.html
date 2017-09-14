@@ -152,6 +152,111 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-flex布局" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/09/14/flex布局/">flex布局学习 --一个小例子</a>
+    </h1>
+  
+
+        
+        <a href="/2017/09/14/flex布局/" class="archive-article-date">
+  	<time datetime="2017-09-14T06:59:49.653Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-09-14</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>Flex 是 Flexible Box 的缩写，意为”弹性布局”，用来为盒状模型提供最大的灵活性。<br>任何一个容器都可以指定为 Flex 布局。</p>
+<p>.box{<br>  display: flex;<br>}<br>行内元素也可以使用 Flex 布局。</p>
+<p>.box{<br>  display: inline-flex;<br>}<br>Webkit 内核的浏览器，必须加上-webkit前缀。</p>
+<p>.box{<br>  display: -webkit-flex; /<em> Safari </em>/<br>  display: flex;<br>}<br>注意，设为 Flex 布局以后，子元素的float、clear和vertical-align属性将失效。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div></pre></td><td class="code"><pre><div class="line">&lt;!DOCTYPE html&gt;</div><div class="line">&lt;html lang=&quot;en&quot;&gt;</div><div class="line">&lt;head&gt;</div><div class="line">	&lt;meta charset=&quot;UTF-8&quot;&gt;</div><div class="line">	&lt;title&gt;Document&lt;/title&gt;</div><div class="line">	&lt;style type=&quot;text/css&quot;&gt;</div><div class="line">	#box&#123;</div><div class="line">		height: 1000px;</div><div class="line">		width: 100%;</div><div class="line">		display: -webkit-flex;</div><div class="line">		flex-direction: row;//决定主轴的方向</div><div class="line">		justify-content:space-around;//定义了项目在主轴上的对齐方式。</div><div class="line">		/*align-content: center;*///多根轴线的对齐方式。如果项目只有一根轴线，该属性不起作用。</div><div class="line">		align-items: center;//定义项目在交叉轴上如何对齐。</div><div class="line"></div><div class="line">	&#125;</div><div class="line">		#one&#123;</div><div class="line">			background-color: red;</div><div class="line">			height: 500px;</div><div class="line">			width: 30%; </div><div class="line">			/*order:1;//定义项目的排列顺序。数值越小，排列越靠前，默认为0。*/</div><div class="line">			/*flex-grow: 1;//定义项目的放大比例，默认为0，即如果存在剩余空间，也不放大。*/</div><div class="line">		&#125;</div><div class="line">		#two&#123;</div><div class="line">			background-color: green;</div><div class="line">			height: 200px;</div><div class="line">			width:30%;</div><div class="line">			/*order:2;*/</div><div class="line">			/*flex-grow: 1;*/</div><div class="line">		&#125;</div><div class="line">		#three&#123;</div><div class="line">			background-color: blue;</div><div class="line">			height: 100px;</div><div class="line">			width:30%;</div><div class="line">			/*order:0;*/</div><div class="line">			/*flex-grow: 2;*/</div><div class="line">			align-self: flex-end;</div><div class="line">		&#125;</div><div class="line">	&lt;/style&gt;</div><div class="line">&lt;/head&gt;</div><div class="line">&lt;body&gt;</div><div class="line">&lt;div id=&quot;box&quot;&gt;</div><div class="line">	&lt;div id=&quot;one&quot;&gt;&lt;/div&gt;</div><div class="line">	&lt;div id=&quot;two&quot;&gt;&lt;/div&gt;</div><div class="line">	&lt;div id=&quot;three&quot;&gt;&lt;/div&gt;</div><div class="line">&lt;/div&gt;</div><div class="line">&lt;/body&gt;</div><div class="line">&lt;/html&gt;</div></pre></td></tr></table></figure></p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2017/09/14/flex布局/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+
+
+
+
+
+
+
+  
+    <article id="post-JS学习" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/08/04/JS学习/">js学习总结</a>
+    </h1>
+  
+
+        
+        <a href="/2017/08/04/JS学习/" class="archive-article-date">
+  	<time datetime="2017-08-04T07:17:22.709Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-08-04</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>一：初识javascript<br>1、通过在HTML文件里写一个<script>标签来嵌入javascript代码，当浏览器加载HTML文件的时候，它会自动执行这段代码。如果运行的是一小段JavaScript代码，可以利用firefox的一个强大的插件firebug来运行，而且现如今的web浏览器带有很多开发工具，可以用来调试、试验和学习。可以通过按f12或者ctrl+shift+J快捷键来唤醒控制台。一些现代浏览器有可能实现了一个简单的控制台API。可以通过使用函数console.log()来向控制台输出信息。也可以通过给alert()函数传入一段文本来弹出一个对话框，但这种输出调试信息的方法更具有侵入性。<br>2、javascript语言核心<br>javascript中两个非常重要的数据类型是对象和数组。并且包括方法。<br>3、客户端javascript<br>可以通过javascript来操控web浏览器中的HTML内容和文档的css样式,同样,也可以通过事件处理程序来定义文档的行为。<br>jquery定义了一套灵巧易用的API,用来操控文档内容、样式和行为。<br>二：JavaScript语言核心<br>1、词法结构<br>1.1、字符集<br>javascript程序是用Unicode字符集编写的。<br>1.2、区分大小写<br>javascript是区分大小写的语言。也就是说，关键字、变量、函数名和所有的标识符都必须采取一致的大小写形式。<br>！注意：HTML并不区分大小写。<br>1.3、空格、换行符和格式控制符。<br>1.4、unicode转义序列。<br>1.5、标准化<br>1.6、注释<br>javascript支持两种格式的注释。在行尾”//“之后的文本都会被Javascript当作注释忽略掉的。此外，”/<em>“和”</em>/“之间的文本也会当作注释。这种注释可以跨行，但不能有嵌套的注释。<br>1.7、标识符和保留字<br>javascript标识符必须以字母、下划线或美元符号开始。后续的字符可以是字母、数字、下划线或美元符号。<br>javascript把一些标识符拿出来用做自己的关键字。这些关键字就不能用作标识符了。</p>
+</script></p>
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2017/08/04/JS学习/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+
+
+
+
+
+
+
+  
     <article id="post-react第一个小例子todolist" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
